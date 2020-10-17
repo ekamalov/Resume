@@ -1,31 +1,31 @@
 @font-face {
     font-family: "GTWalsheimPro";
-    src: url("./assets/fonts/GTWalsheimPro.otf") format("truetype");
+    src: url("../../assets/fonts/GTWalsheimPro.otf") format("truetype");
 }
 
 @font-face {
     font-family: "GTWalsheimPro-Black";
-    src: url("./assets/fonts/GTWalsheimPro-Black.otf") format("truetype");
+    src: url("../../assets/fonts/GTWalsheimPro-Black.otf") format("truetype");
 }
 
 @font-face {
     font-family: "GTWalsheimPro-Medium";
-    src: url("./assets/fonts/GTWalsheimPro-Medium.otf") format("truetype");
+    src: url("../../assets/fonts/GTWalsheimPro-Medium.otf") format("truetype");
 }
 
 @font-face {
     font-family: "GTWalsheimPro-Bold";
-    src: url("./assets/fonts/GTWalsheimPro-Bold.otf") format("truetype");
+    src: url("../../assets/fonts/GTWalsheimPro-Bold.otf") format("truetype");
 }
 
 @font-face {
     font-family: "PFBeauSansPro-Bbook";
-    src: url("./assets/fonts/PFBeauSansPro-Bbook.ttf") format("truetype");
+    src: url("../../assets/fonts/PFBeauSansPro-Bbook.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "EncodeSansNarrow-Bold";
-    src: url("./assets/fonts/EncodeSansNarrow-Bold.ttf") format("truetype");
+    src: url("../../assets/fonts/EncodeSansNarrow-Bold.ttf") format("truetype");
 }
 
 * {
