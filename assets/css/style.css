@@ -240,12 +240,12 @@ a:hover:after, a:focus:after {
 }
 
 .span-name {
-    color: rgb(66, 161, 255);
+    color: #00a234;
 }
 
 .img-hi {
     width: 72px;
-    height: 84px;
+    height: 72px;
     position: relative;
     top: -10px;
 }
@@ -271,7 +271,7 @@ a:hover:after, a:focus:after {
 
 .el-bh-link-style a {
     font-size: 20px;
-    color: #42a1ff;
+    color: #49be4a;
     text-decoration: underline;
 }
 
@@ -1463,7 +1463,7 @@ button.btn-download:hover {
 
 .header-style {
     /* height: 72px; */
-    background-color: #42a1ff;
+    background-color: #00a234;
     padding: 0;
     min-width: 100%;
     /* min-height: 72px;
