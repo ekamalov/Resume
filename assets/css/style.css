@@ -1165,7 +1165,7 @@ button.btn-download:hover {
 }
 
 .bg-subblock-2-img {
-    background-image: url('./assets/newimg/block2/homs-12.webp');
+    background-image: url('https://res.cloudinary.com/ekamalov/image/upload/f_png/v1603090686/block2/homs-12_nohmk2.webp');
     width: 100%;
     height: 800px;
     background-position: center;
@@ -1197,7 +1197,7 @@ button.btn-download:hover {
 }
 
 .bg-subblock-5-img {
-    background-image: url('./assets/newimg/block5/qoovee-screens.webp');
+    background-image: url('https://res.cloudinary.com/ekamalov/image/upload/f_png/v1603027164/block5/qoovee-screens_dwhqwc.webp');
     width: 100%;
     height: 800px;
     background-position: center;
@@ -1205,7 +1205,7 @@ button.btn-download:hover {
 }
 
 .bg-subblock-6-img {
-    background-image: url('./assets/newimg/block6/sub-screens@3x.webp');
+    background-image: url('https://res.cloudinary.com/ekamalov/image/upload/f_png/v1603090177/block6/sub-screens_3x_kxbrjm.webp');
     width: 100%;
     height: 800px;
     background-position: center;
