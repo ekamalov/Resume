@@ -1041,7 +1041,7 @@ button.btn-download:hover {
         /* height: 812px; */
         /* align-items: center; */
     }
-    .bg-index-block-5 .mob-block-pos {
+    .bg-index-kel-block .mob-block-pos {
         color: #000000;
     }
     .mob-title {
@@ -1144,12 +1144,12 @@ button.btn-download:hover {
     background-color: #0f0f0f;
 }
 
-.bg-index-block-4 {
-    background-color: #000000;
+.bg-index-nomad-block {
+    background-color: #00727f;
 }
 
-.bg-index-block-5 {
-    background-color: #ecf1f8;
+.bg-index-kel-block {
+    background-color: #f7f9fc;
 }
 
 .bg-index-block-6 {
@@ -1197,7 +1197,7 @@ button.btn-download:hover {
 }
 
 .bg-subblock-5-img {
-    background-image: url('https://res.cloudinary.com/ekamalov/image/upload/f_png/v1603027164/block5/qoovee-screens_dwhqwc.webp');
+    background-image: url('https://res.cloudinary.com/ekamalov/image/upload/f_png/v1603027171/block5/qoovee-mobile-screens_kxv6fc.webp');
     width: 100%;
     height: 800px;
     background-position: center;
@@ -1226,6 +1226,11 @@ button.btn-download:hover {
 
 .index-block {
     padding: 144px 120px 176px;
+    /* padding: 144px 140px 176px; */
+}
+
+.index-block-opensource {
+    padding: 120px 120px 0px;
     /* padding: 144px 140px 176px; */
 }
 
@@ -1269,6 +1274,7 @@ button.btn-download:hover {
 .index-block-withbg-all {
     padding: 60px 180px 60px 180px;
 }
+
 
 .index-block-last-section {
     max-width: 1110px!important;
