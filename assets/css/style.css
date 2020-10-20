@@ -719,8 +719,8 @@ button.btn-download:hover {
 }
 
 .imgportrait {
-    width: 350px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
 }
 
 .imgportrait-mob {
@@ -1742,6 +1742,13 @@ button.btn-download:hover {
 .for_video {
     overflow: hidden!important;
     position: relative;
+}
+
+
+
+.iframe-round {
+    -webkit-border-radius: 32px;
+    border-radius: 32px;
 }
 
 .bg-example-pic1 {
