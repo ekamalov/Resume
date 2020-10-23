@@ -6,11 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Resume Erzhan Kamalov</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-</head>
+  <script src="./assets/html2pdf.bundle.min.js"></script>
+  <script>
+    function generatePDF() {
+      // Choose the element that our invoice is rendered in.
+      const element = document.getElementById("resume-page");
+      console.log(element);
 
+      var opt = {
+        margin: 1,
+        filename: 'myfile.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 1, scrollX: 0, scrollY: 0, width: 1200, height: 500 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+
+
+      // Choose the element and save the PDF for our user.
+      html2pdf()
+        .set(opt)
+        .from(element)
+        .save();
+    }
+  </script>
+</head>
 <body class="resume-page">
   <nav class="container navbar navbar-expand-lg block-nav align-items-center">
     <div class="mr-auto"><a class="navbar-brand" href="/">
@@ -39,7 +62,7 @@
       </li>
     </ul>
   </nav>
-  <div class="container block-content">
+  <div class="container block-content" id="resume-page">
     <div class="row">
       <div class="col-lg-12 col-xs-12">
         <div class="resume-title ">
@@ -53,7 +76,8 @@
     <div class="row">
       <div class="col-lg-8 col-xs-12">
         <div class="res-block-text">
-          <p class="res-text">I'm an iOS mobile Software Engineer with extensive experience. I feel a sincere devotion to developing high-quality, functional, and highly loaded products.
+          <p class="res-text">I'm an iOS mobile Software Engineer with extensive experience. I feel a sincere devotion
+            to developing high-quality, functional, and highly loaded products.
             I passionate doing open-source projects and experimenting with new UI/UX concepts.</p>
           <p class="res-text">I'm learning every day to be capable of crafting high-class products from
             scratch. Recently I've been getting involved with Vapor server-side</p>
@@ -64,8 +88,10 @@
       </div>
       <div class="col-lg-4 col-xs-12">
         <div>
-          <img src="https://res.cloudinary.com/ekamalov/image/upload/v1603210922/resume/sticker_sf0dir.png" class="imgportrait" />
-          <img src="https://res.cloudinary.com/ekamalov/image/upload/v1603210922/resume/sticker_sf0dir.png" class="imgportrait-mob" />
+          <img src="https://res.cloudinary.com/ekamalov/image/upload/v1603210922/resume/sticker_sf0dir.png"
+            class="imgportrait" />
+          <img src="https://res.cloudinary.com/ekamalov/image/upload/v1603210922/resume/sticker_sf0dir.png"
+            class="imgportrait-mob" />
         </div>
       </div>
     </div>
@@ -144,7 +170,7 @@
           </div>
         </div>
         <div class="res-el-sitebar-block">
-          <button href="#" class="btn-download">Download Resume PDF</button>
+          <button href="#" class="btn-download" onclick="generatePDF()">Download Resume PDF</button>
         </div>
         <div class="res-el-sitebar-block">
           <div class="res-el-sitebar-menu-title">Recommendation letters</div>
@@ -167,7 +193,8 @@
       <div class="col-lg-8 col-xs-12">
         <div class="res-el-title-head">experience</div>
         <div class="res-block-desc">
-          <div class="res-el-title-content"><span class="el-col-1">Freelancer / </span><span class="el-col-2">iOS developer</span></div>
+          <div class="res-el-title-content"><span class="el-col-1">Freelancer / </span><span class="el-col-2">iOS
+              developer</span></div>
           <div class="res-el-date-content">May 2018 — Present (Project Contract)</div>
           <div class="res-el-list-content">
             <ul>
@@ -179,20 +206,23 @@
           </div>
         </div>
         <div class="res-block-desc">
-          <div class="res-el-title-content"><span class="el-col-1">QooVee.com / </span><span class="el-col-2">Senior iOS engineer</span></div>
+          <div class="res-el-title-content"><span class="el-col-1">QooVee.com / </span><span class="el-col-2">Senior iOS
+              engineer</span></div>
           <div class="res-el-date-content">Sep 2017 — May 2018</div>
           <div class="res-el-list-content">
             <ul>
               <li>Designing MVVM architecture for an application</li>
               <li>Iterating designs into working products with the UX team</li>
               <li>Designing, developing, managing, creating and maintaining technical components and templates</li>
-              <li>Working to create new applications and to expand/improve on an ongoing basis by adding new functionality and resolving existing issues</li>
+              <li>Working to create new applications and to expand/improve on an ongoing basis by adding new
+                functionality and resolving existing issues</li>
               <li>Optimizing and managing memory load, UI layout/rendering and UI/network performance</li>
             </ul>
           </div>
         </div>
         <div class="res-block-desc">
-          <div class="res-el-title-content"><span class="el-col-1">Nii Inteh “Aman” / </span><span class="el-col-2">Middle iOS engineer</span></div>
+          <div class="res-el-title-content"><span class="el-col-1">Nii Inteh “Aman” / </span><span
+              class="el-col-2">Middle iOS engineer</span></div>
           <div class="res-el-date-content">Sep 2017 — Dec 2017</div>
           <div class="res-el-list-content">
             <ul>
@@ -205,7 +235,8 @@
           </div>
         </div>
         <div class="res-block-desc">
-          <div class="res-el-title-content"><span class="el-col-1">State Institution "Info-System" under the Ministry of Finance / </span><span class="el-col-2"><br> Junior iOS & Server-Side java engineer</span></div>
+          <div class="res-el-title-content"><span class="el-col-1">State Institution "Info-System" under the Ministry of
+              Finance / </span><span class="el-col-2"><br> Junior iOS & Server-Side java engineer</span></div>
           <div class="res-el-date-content">May 2017 — Oct 2017</div>
           <div class="res-el-list-content">
             <ul>
@@ -219,7 +250,8 @@
           </div>
         </div>
         <div class="res-block-desc">
-          <div class="res-el-title-content"><span class="el-col-1">Namba / </span><span class="el-col-2">iOS developer</span></div>
+          <div class="res-el-title-content"><span class="el-col-1">Namba / </span><span class="el-col-2">iOS
+              developer</span></div>
           <div class="res-el-date-content">Feb 2017 — May 2017</div>
           <div class="res-el-list-content">
             <ul>
@@ -232,11 +264,13 @@
           </div>
         </div>
         <div class="res-block-desc">
-          <div class="res-el-title-content"><span class="el-col-1">Ala-Too technologies company (AST) / </span><span class="el-col-2">iOS engineer <br> Product manager in the World Nomad Games</span></div>
+          <div class="res-el-title-content"><span class="el-col-1">Ala-Too technologies company (AST) / </span><span
+              class="el-col-2">iOS engineer <br> Product manager in the World Nomad Games</span></div>
           <div class="res-el-date-content">Apr 2016 — Jan 2017</div>
           <div class="res-el-list-content">
             <ul>
-              <li>Act as technical lead on projects, assist with defining the solution, and working with a team of developers</li>
+              <li>Act as technical lead on projects, assist with defining the solution, and working with a team of
+                developers</li>
               <li>Work closely with other Product Development teams to improve consistency and timing of releases</li>
               <li>Design architecture for App</li>
               <li>Publication of completed projects on App Store & Google play</li>
@@ -247,12 +281,14 @@
           </div>
         </div>
         <div class="res-block-desc">
-          <div class="res-el-title-content"><span class="el-col-1">Ala-Too technologies company (AST) / </span><span class="el-col-2">iOS developer</span></div>
+          <div class="res-el-title-content"><span class="el-col-1">Ala-Too technologies company (AST) / </span><span
+              class="el-col-2">iOS developer</span></div>
           <div class="res-el-date-content">Oct 2015 — Apr 2016</div>
           <div class="res-el-list-content">
             <ul>
               <li>Work with the team to create new iOS apps built upon our common mobile framework</li>
-              <li>Work to create new applications and to expand/improve on an ongoing basis by adding new functionality and resolving existing issues</li>
+              <li>Work to create new applications and to expand/improve on an ongoing basis by adding new functionality
+                and resolving existing issues</li>
             </ul>
           </div>
         </div>
@@ -304,9 +340,15 @@
       </li>
     </ul>
   </nav>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
